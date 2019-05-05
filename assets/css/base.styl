@@ -1,0 +1,56 @@
+::selection
+  background-color $selection-background-color
+  color $selection-color
+
+body
+  background-color $base-background-color
+  color $base-font-color
+  font-family $base-font-family
+  line-height $base-line-height
+  text-size-adjust 100%
+  -webkit-font-smoothing $font-smoothing
+  -moz-osx-font-smoothing grayscale
+  text-rendering $text-rendering
+
+  +media-screen-pc
+    font-size $base-font-size-pc
+
+  +media-screen-sp
+    font-size $base-font-size-sp
+
+h1
+h2
+h3
+h4
+h5
+h6
+  margin 0
+
+ul
+  margin 0
+  padding 0
+
+ul
+ol
+  list-style none
+
+p
+  margin 0
+
+a
+  color $main-color
+
+figure
+  margin 0
+
+button
+  padding 0
+  outline none
+  border none
+  background-color transparent
+
+.is-desktop button:hover
+  cursor pointer
+
+::-webkit-input-placeholder
+  color $base-placeholder-color

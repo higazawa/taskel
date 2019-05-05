@@ -1,0 +1,27 @@
+media-screen-pc()
+  @media screen and (min-width: $break-point-tb)
+    @content
+
+media-screen-sp()
+  @media screen and (max-width: $break-point-tb - .1px)
+    @content
+
+media-screen-tb()
+  @media (min-width: $break-point-tb) and (max-width: $break-point-pc - .1px)
+    @content
+
+media-screen-pl()
+  @media screen and (min-width: $break-point-pc)
+    @content
+
+media-screen-mo()
+  @media screen and (max-width: $break-point-pc - .1px)
+    @content
+
+media-screen-ms()
+  @media screen and (max-width: $break-point-sp - .1px)
+    @content
+
+media-screen-ls()
+  @media screen and (orientation: landscape)
+    @content
